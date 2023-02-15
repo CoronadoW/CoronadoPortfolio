@@ -1,0 +1,28 @@
+.row {
+    padding: 5px;
+}
+
+div {
+    text-align: center;
+}
+
+#nombre {
+    font-weight: bold;
+    margin-top: 10%;
+
+}
+
+#titulo {
+    font-size: small;
+}
+
+@media (min-width: 576px) {
+    #fotoPerfil {
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(76, 76, 76);
+        left: 3%;
+        top: 38%;
+    }
+}
