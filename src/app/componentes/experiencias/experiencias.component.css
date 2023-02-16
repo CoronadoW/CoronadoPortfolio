@@ -13,3 +13,7 @@ div {
 h3 {
     margin-left: 10%;
 }
+
+.card {
+    align-items: center;
+}
