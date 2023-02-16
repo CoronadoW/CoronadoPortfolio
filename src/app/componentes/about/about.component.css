@@ -6,12 +6,6 @@ div {
     text-align: center;
 }
 
-#nombre {
-    font-weight: bold;
-    margin-top: 10%;
-
-}
-
 #titulo {
     font-size: small;
 }
@@ -23,6 +17,22 @@ div {
         border-radius: 100%;
         box-shadow: 3px 3px 3px rgb(76, 76, 76);
         left: 3%;
-        top: 38%;
+        top: 430px;
     }
+}
+
+@media (max-width: 575.9px) {
+    #fotoPerfil {
+        position: absolute;
+        width: 30%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(76, 76, 76);
+        left: 35%;
+        top: 150px;
+    }
+}
+
+#nombre {
+    font-weight: bold;
+    margin-top: 10%;
 }
