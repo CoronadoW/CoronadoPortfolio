@@ -1,0 +1,31 @@
+div {
+    padding: 2%;
+}
+
+#google {
+    width: 34%;
+}
+
+#faucett {
+    width: 30%;
+}
+
+#cef {
+    width: 20.5%;
+}
+
+#arg-programa {
+    width: 55%;
+}
+
+#edaci {
+    width: 19%;
+}
+
+h3 {
+    margin-left: 10%;
+}
+
+.card {
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+.row {
+    padding: 5%;
+    text-align: center;
+}
+
+.card-header {
+    font-weight: 500;
+}
+
+img {
+    width: 120px;
+}
