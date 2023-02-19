@@ -1,0 +1,100 @@
+{
+    "formacion": [
+        {
+            "lugar": "C.E.P Jean Piaget",
+            "estudioAlcanzado": "Primario y Secundario Completo",
+            "anio": "1986-1996",
+            "img": "../assets/img/jeanpiaget.png"
+        },
+        {
+            "lugar": "Escuela de Aviación Civil del Perú",
+            "estudioAlcanzado": "Curso Teorico de Piloto Privado Y Comercial",
+            "anio": "1997-1998",
+            "img": "../assets/img/edaci.jpg"
+        },
+        {
+            "lugar": "Instituto Superior Tecnologico Elmer Faucett",
+            "estudioAlcanzado": "Mecánico de Mantenimiento Aeronáutico",
+            "anio": "1999-2001",
+            "img": "../assets/img/faucett.png"
+        },
+        {
+            "lugar": "Centro de Estudios Fotográficos",
+            "estudioAlcanzado": "Carrera de Fotografia",
+            "anio": "2013-2015",
+            "img": "../assets/img/download.png"
+        },
+        {
+            "lugar": "Google Activate",
+            "estudioAlcanzado": "Curso de Introducción al Desarrollo Web",
+            "anio": "Ene/2022",
+            "img": "../assets/img/google.png"
+        },
+        {
+            "lugar": "Argentina Programa",
+            "estudioAlcanzado": "Primera Etapa del Plan Argentina Programa",
+            "anio": "Feb-Abr/2022",
+            "img": "../assets/img/argentinaPrograma.png"
+        },
+        {
+            "lugar": "Argentina Programa",
+            "estudioAlcanzado": "Segunda Etapa del Plan Argentina Programa",
+            "anio": "Jun/2022-Actualidad",
+            "img": "../assets/img/argentinaPrograma.png"
+        }
+    ],
+    "experiencia": [
+        {
+            "lugar": "Aerocontinente-Aerolinea",
+            "puesto": "Mecánico de Mantenimiento Aeronáutico",
+            "anio": "Feb-Jul/2004"
+        },
+        {
+            "lugar": "Fabrica Argentina de Aviones S.A.",
+            "puesto": "Mecánico de Mantenimiento Aeronáutico",
+            "anio": "Oct/2004-Actualidad"
+        }
+    ],
+    "logros": [
+        {
+            "curso": "Curso Hercules C-130 for Modification Task",
+            "nivel": "Nivel IV",
+            "institucion": "L3 Aerospace Systems-Waco Texas",
+            "fecha": "Dic 2016",
+            "horas": "90 horas"
+        },
+        {
+            "curso": "Curso Airbus A320 family (IAE V2500)-ATA 104",
+            "nivel": "Nivel I Familiarización",
+            "institucion": "Centro de Instrucción de Aeronáutica Civil FadeA",
+            "fecha": "Jun-Jul 2019",
+            "horas": "30 horas"
+        },
+        {
+            "curso": "Curso Airbus A320 family (IAE V2500)-ATA 104",
+            "nivel": "Nivel II Category A",
+            "institucion": "Etihad Airways Technical Trainning",
+            "fecha": "Feb-Mar 2020",
+            "horas": ""
+        },
+        {
+            "curso": "Curso Airbus A320 family (IAE V2500)-ATA 104",
+            "nivel": "Nivel III Mantenimiento y Linea de Base",
+            "institucion": "Centro de Instrucción de Aeronáutica Civil FadeA",
+            "fecha": "Jun-Sep 2019",
+            "horas": "270 horas"
+        }
+    ],
+    "otrosLogros": [
+        {
+            "logro": "Salto en paracaidas",
+            "lugar": "Aeroclub Alta Gracia - Córdoba"
+        }
+    ],
+    "about": [
+        {
+            "titulo": "Reseña",
+            "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officiis, voluptate deserunt perferendis quibusdam architecto minus laudantium dolor, magnam facilis veniam molestiae quod quos rerum, commodi natus obcaecati totam! Enim."
+        }
+    ]
+}
