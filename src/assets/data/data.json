@@ -1,5 +1,12 @@
 {
-    "formacion": [
+    "nombre": "Walter Coronado Fababa",
+    "titulo": "Full Stack Developer Jr.",
+    "acerca": "Acerca de",
+    "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officiis, voluptate deserunt perferendis quibusdam architecto minus laudantium dolor, magnam facilis veniam molestiae quod quos rerum, commodi natus obcaecati totam! Enim.",
+    "aboutImg": "../../../assets/img/IMG_20220802_110334029.jpg",
+    "bannerImg": "../../../assets/img/grunge-banner-3-9.png",
+    "logoImg": "../../../assets/img/ArgPro.png",
+    "educacion": [
         {
             "lugar": "C.E.P Jean Piaget",
             "estudioAlcanzado": "Primario y Secundario Completo",
@@ -22,7 +29,7 @@
             "lugar": "Centro de Estudios Fotográficos",
             "estudioAlcanzado": "Carrera de Fotografia",
             "anio": "2013-2015",
-            "img": "../assets/img/download.png"
+            "img": "../assets/img/cef.png"
         },
         {
             "lugar": "Google Activate",
@@ -34,25 +41,27 @@
             "lugar": "Argentina Programa",
             "estudioAlcanzado": "Primera Etapa del Plan Argentina Programa",
             "anio": "Feb-Abr/2022",
-            "img": "../assets/img/argentinaPrograma.png"
+            "img": "../assets/img/ArgPro.png"
         },
         {
             "lugar": "Argentina Programa",
             "estudioAlcanzado": "Segunda Etapa del Plan Argentina Programa",
             "anio": "Jun/2022-Actualidad",
-            "img": "../assets/img/argentinaPrograma.png"
+            "img": "../assets/img/ArgPro.png"
         }
     ],
-    "experiencia": [
+    "experiencias": [
         {
             "lugar": "Aerocontinente-Aerolinea",
             "puesto": "Mecánico de Mantenimiento Aeronáutico",
-            "anio": "Feb-Jul/2004"
+            "anio": "Feb-Jul/2004",
+            "img": "../assets/img/aerocontinente1.jpg"
         },
         {
             "lugar": "Fabrica Argentina de Aviones S.A.",
             "puesto": "Mecánico de Mantenimiento Aeronáutico",
-            "anio": "Oct/2004-Actualidad"
+            "anio": "Oct/2004-Actualidad",
+            "img": "../assets/img/fadea.png"
         }
     ],
     "logros": [
@@ -93,7 +102,9 @@
     ],
     "about": [
         {
-            "titulo": "Reseña",
+            "nombre": "Walter Coronado Fababa",
+            "titulo": "Full Stack Developer Jr.",
+            "acerca": "Acerca de",
             "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officiis, voluptate deserunt perferendis quibusdam architecto minus laudantium dolor, magnam facilis veniam molestiae quod quos rerum, commodi natus obcaecati totam! Enim."
         }
     ]

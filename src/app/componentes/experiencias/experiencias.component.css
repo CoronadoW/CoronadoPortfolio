@@ -2,18 +2,21 @@ div {
     padding: 2%;
 }
 
-#google {
-    width: 34%;
-}
-
-#faucett {
-    width: 30%;
-}
-
-h3 {
-    margin-left: 10%;
+#imgExper {
+    width: 150px;
 }
 
 .card {
     align-items: center;
 }
+
+h3 {
+    column-span: all;
+    margin-left: 10%;
+}
+
+/*
+.container {
+    column-count: 2;
+}
+*/

@@ -2,6 +2,30 @@ div {
     padding: 2%;
 }
 
+#imgEdu {
+    width: 150px;
+}
+
+
+.card {
+    align-items: center;
+
+}
+
+h3 {
+    margin-left: 10%;
+}
+
+/*
+.container {
+    column-count: 2;
+}
+
+h3 {
+    column-span: all;
+    margin-left: 10%;
+}
+
 #google {
     width: 34%;
 }
@@ -21,11 +45,4 @@ div {
 #edaci {
     width: 19%;
 }
-
-h3 {
-    margin-left: 10%;
-}
-
-.card {
-    align-items: center;
-}
+*/
