@@ -6,15 +6,21 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
-                <a class="nav-link" href="#">Experience</a>
-                <a class="nav-link" href="#">Education</a>
-                <a class="nav-link" href="#">Hard & Soft Skills </a>
-                <a class="nav-link disabled">Projects</a>
-            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link active" [routerLink]="['/experiencias']" href="#">Experience</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link active" [routerLink]="['/educacion']" href="#">Education</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link active" [routerLink]="['/skills']" href="#">Hard & Soft Skills</a>
+                </li>
+                <li class="nav-link disabled">Projects</li>
+            </ul>
         </div>
         <app-redes></app-redes>
-        <button type="button" class="btn btn-outline-secondary">Login</button>
+        <button type="button" class="btn btn-outline-secondary"><a class="nav-link active" [routerLink]="['/inicio']"
+                href="#">Iniciar Sesión</a></button>
     </div>
 </nav>
