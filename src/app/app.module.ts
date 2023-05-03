@@ -23,6 +23,12 @@ import { PortfolioService } from './servicios/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
+import { RegisterComponent } from './componentes/register/register.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { MainComponent } from './componentes/main/main.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
 
 
 @NgModule({
@@ -40,6 +46,9 @@ import { PortfolioComponent } from './componentes/portfolio/portfolio.component'
     FooterComponent,
     InicioComponent,
     PortfolioComponent,
+    RegisterComponent,
+    LoginComponent,
+    MainComponent,
 
 
   ],
@@ -47,7 +56,9 @@ import { PortfolioComponent } from './componentes/portfolio/portfolio.component'
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]
