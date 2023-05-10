@@ -5,6 +5,7 @@ import { ExperienciasComponent } from './componentes/experiencias/experiencias.c
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
+import { RegisterComponent } from './componentes/register/register.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'experiencias', component: ExperienciasComponent },
   { path: 'educacion', component: EducacionComponent },
   { path: 'skills', component: SkillsComponent },
+  { path: 'register', component: RegisterComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'portfolio' }
 ];
 
