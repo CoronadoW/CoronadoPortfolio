@@ -1,5 +1,23 @@
+<h2>Iniciar Sesión</h2>
+<form [formGroup]="formInicio" (ngSubmit)="onSubmit()" class="m-5">
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" formControlName="email">
+        <div id="emailHelp" class="form-text">We'll never ever share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" formControlName="password">
+    </div>
+    <input type="submit" value="Enviar">
+</form>
+
+
+
+<!--
 <h1 class="m-5">Iniciar Sesión</h1>
-<form class="m-5">
+
+<form [formGroup]="formInicio" (ngSubmit)="onSubmit()" class="m-5">
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -15,3 +33,4 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+-->

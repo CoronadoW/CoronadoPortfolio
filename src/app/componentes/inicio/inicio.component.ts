@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { UserService } from 'src/app/servicios/user.service';
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +10,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  formInicio: FormGroup;
+
+  constructor(
+    private userService: UserService,
+    private router: Router
+
+  ) {
+    this.formInicio = new FormGroup({
+      email: new FormControl(),
+      password: new FormControl()
+    })
+  }
 
   ngOnInit(): void {
   }
+
+  onSubmit() {
+    this.userService.inicio(this.formInicio.value)
+      .then(response => {
+        console.log(response);
+        this.router.navigate(['/portfolio']);
+      })
+      .catch(error => console.log(error));
+  }
+
+
 
 }

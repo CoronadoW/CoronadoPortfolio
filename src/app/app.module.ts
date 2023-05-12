@@ -24,8 +24,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 import { RegisterComponent } from './componentes/register/register.component';
-import { LoginComponent } from './componentes/login/login.component';
-import { MainComponent } from './componentes/main/main.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth, getAuth } from '@angular/fire/auth';
@@ -49,12 +47,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     InicioComponent,
     PortfolioComponent,
     RegisterComponent,
-    LoginComponent,
-    MainComponent,
-
-
-
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
