@@ -16,3 +16,6 @@ export class PersonaService {
     return this.http.get<persona>(this.URL + 'ver/perfil');
   }
 }
+
+
+/*implementacion del back y base de datos en el front,mgb*/

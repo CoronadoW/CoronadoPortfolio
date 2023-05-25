@@ -10,3 +10,5 @@ export class persona {
         this.img = img;
     }
 }
+
+/* implementacion del back/base de datos en el front. mgb */

@@ -18,3 +18,11 @@ export class AboutComponent implements OnInit {
   }
 
 }
+
+/* Implementacion del back en el front:
+le digo al componente about que me cree el objeto persona de tipo persona, con los parametros vacion para "nombre","titulo" e "img"
+el constructor llama al servicio (persona.service.ts)
+en el ngOninit le digo que este(this) persona.service se suscriba y me traiga la data, lo que este en persona se va a guardar en data. 
+El subscribe es un metodo siempre esta al pendiente que el observable hace un cambio, conecta el observable con algunos eventos observables, entonces detecta un cambio , ejecuta un codigo y provoca una respuesta x.
+ahora voy al html del componente
+*/
