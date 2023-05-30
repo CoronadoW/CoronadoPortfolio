@@ -13,7 +13,7 @@ para poder ir de un componente a otro y navegar en la misma pagina importamos el
 En teoria para luego de loggearse redirigir al componente "portfolio"...canActivate(() => redirectLoggedInTo(['/portfolio'])) */
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
-  { path: 'portfolio', component: PortfolioComponent, ...canActivate(() => redirectUnauthorizedTo(['/inicio'])) },
+  { path: 'portfolio', component: PortfolioComponent },
   { path: 'experiencias', component: ExperienciasComponent },
   { path: 'educacion', component: EducacionComponent },
   { path: 'skills', component: SkillsComponent },

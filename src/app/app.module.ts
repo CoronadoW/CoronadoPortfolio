@@ -55,8 +55,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     ReactiveFormsModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideAuth(() => getAuth())
+
   ],
   providers: [],
   bootstrap: [AppComponent]
