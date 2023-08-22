@@ -6,15 +6,30 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   templateUrl: './educacion.component.html',
   styleUrls: ['./educacion.component.css']
 })
+
+
 export class EducacionComponent implements OnInit {
-  educacionList: any;
-  constructor(private datosPortfolio: PortfolioService) { }
+  educacion: Educacion[] = [];
+
+
+  constructor(private) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
-      this.educacionList = data.educacion;
-    });
+
   }
 
 }
+
+//A continuacion EducacionComponent sirviendose del portfolioService
+//export class EducacionComponent implements OnInit {
+//educacionList: any;
+
+
+//constructor(private datosPortfolio: PortfolioService) { }
+
+//ngOnInit(): void {
+  //this.datosPortfolio.obtenerDatos().subscribe(data => {
+    //console.log(data);
+    //this.educacionList = data.educacion;
+  //});
+//}
