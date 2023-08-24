@@ -27,7 +27,9 @@ import { RegisterComponent } from './componentes/register/register.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth, getAuth } from '@angular/fire/auth';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NewExperienciaComponent } from './componentes/experiencias/new-experiencia.component';
+import { EditExperienciaComponent } from './componentes/experiencias/edit-experiencia.component';
 
 
 
@@ -47,6 +49,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     InicioComponent,
     PortfolioComponent,
     RegisterComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
   ],
 
   imports: [
@@ -55,7 +59,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     ReactiveFormsModule,
-
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]

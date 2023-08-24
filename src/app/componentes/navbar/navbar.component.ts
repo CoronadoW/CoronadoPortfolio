@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/servicios/user.service';
 
 
 @Component({
@@ -10,11 +11,19 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   constructor(
-
+    private userService: UserService,
     private router: Router
   ) { }
 
   ngOnInit(): void {
+  }
+
+  onClick() {
+    this.userService.logOut()
+      .then(() => {
+        this.router.navigate(['/inicio'])
+      })
+      .catch()
   }
 
 

@@ -7,18 +7,22 @@ import { PortfolioComponent } from './componentes/portfolio/portfolio.component'
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { RegisterComponent } from './componentes/register/register.component';
 import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
+import { NewExperienciaComponent } from './componentes/experiencias/new-experiencia.component';
+import { EditExperienciaComponent } from './componentes/experiencias/edit-experiencia.component';
 
 /*para bloquear ciertas rutas si estamos logueados con firebase o no importamos canActivate, y de esta manera si no estamos registrados nos mandara al componente que se le indique
 para poder ir de un componente a otro y navegar en la misma pagina importamos el Router.
 En teoria para luego de loggearse redirigir al componente "portfolio"...canActivate(() => redirectLoggedInTo(['/portfolio'])) */
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
-  { path: 'portfolio', component: PortfolioComponent },
+  { path: 'portfolio', component: PortfolioComponent, ...canActivate(() => redirectUnauthorizedTo(['/register'])) },
   { path: 'experiencias', component: ExperienciasComponent },
   { path: 'educacion', component: EducacionComponent },
   { path: 'skills', component: SkillsComponent },
   { path: 'register', component: RegisterComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'portfolio' }
+  { path: 'newExperiencia', component: NewExperienciaComponent },
+  { path: 'editExperiencia', component: EditExperienciaComponent },
+  { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 
 @NgModule({

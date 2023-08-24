@@ -1,22 +1,54 @@
 import { Component, OnInit } from '@angular/core';
+import { Experiencia } from 'src/app/model/experiencia';
+import { ExperienciaServiceService } from 'src/app/servicios/experiencia-service.service';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { UserService } from 'src/app/servicios/user.service';
+import { Auth } from '@angular/fire/auth';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-experiencias',
   templateUrl: './experiencias.component.html',
   styleUrls: ['./experiencias.component.css']
 })
+
+
 export class ExperienciasComponent implements OnInit {
-  experienciasList: any;
-  constructor(private datosPortfolio: PortfolioService) { }
+  experiencia: Experiencia[] = [];
+
+
+  constructor(private experienciaService: ExperienciaServiceService, private Auth: Auth, private router: Router) { }
+
+  isLogged = false;
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
-      this.experienciasList = data.experiencias;
-    });
+
+    this.cargarExperiencia();
+    if (this.Auth.currentUser) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+  }
+
+  cargarExperiencia() {
+    this.experienciaService.lista().subscribe(data => { this.experiencia = data; })
+  }
+
+  delete(id?: number) {
+    if (id != undefined) {
+      this.experienciaService.delete(id).subscribe(
+        data => {
+          this.cargarExperiencia();
+        }, err => {
+          alert("No se borró la experiencia");
+        }
+      )
+    }
   }
 }
+
+
 
 /*Servicio
 2° Ahora inyecto el servicio en el constructor del archivo ts del componente 

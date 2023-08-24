@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">CoronadoPortfolio</a>
+        <a class="navbar-brand" href="#" [routerLink]="['/portfolio']">CoronadoPortfolio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,9 @@
 
         <button type="button" class="btn btn-outline-secondary"><a class="nav-link active" [routerLink]="['/inicio']"
                 href="#">Iniciar Sesión</a></button>
-        <button id="logout" type="button" class="btn btn-outline-secondary">Logout</button>
+
+        <button (click)="onClick()" id="logout" type="button" class="btn btn-outline-secondary">Logout</button>
+
         <button id="reg" type="button" class="btn btn-outline-secondary"><a class="nav-link active"
                 [routerLink]="['/register']" href="#">Register</a></button>
     </div>
