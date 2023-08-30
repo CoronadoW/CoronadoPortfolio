@@ -1,5 +1,5 @@
 export class Educacion {
-    id?= number;
+    id?: number;
     lugarEdu: String;
     descripcionEdu: String;
     anioEdu: String;
@@ -10,7 +10,12 @@ export class Educacion {
         this.descripcionEdu = descripcionEdu;
         this.anioEdu = anioEdu;
         this.imgEdu = imgEdu;
-
     }
 
 }
+
+
+
+
+
+

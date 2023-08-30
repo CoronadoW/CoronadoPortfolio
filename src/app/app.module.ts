@@ -30,6 +30,8 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewExperienciaComponent } from './componentes/experiencias/new-experiencia.component';
 import { EditExperienciaComponent } from './componentes/experiencias/edit-experiencia.component';
+import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
+import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 
 
 
@@ -50,7 +52,9 @@ import { EditExperienciaComponent } from './componentes/experiencias/edit-experi
     PortfolioComponent,
     RegisterComponent,
     NewExperienciaComponent,
+    NewEducacionComponent,
     EditExperienciaComponent,
+    EditEducacionComponent,
   ],
 
   imports: [

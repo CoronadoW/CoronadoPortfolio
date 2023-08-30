@@ -1,22 +1,30 @@
 <app-navbar></app-navbar>
 <div class="container">
-    <div class="container">
+    <div class="row">
         <div class="col-xs-12 col-lg-6">
 
             <h3>Educación</h3>
 
-            <div class="card mb-3" *ngFor="let Educacion of educacionList">
-                <img [src]="Educacion.img" class="card-img-top" id="imgEdu">
+            <div class="card mb-3" *ngFor="let Educacion of educacion">
+                <img [src]="Educacion.imgEdu" class="card-img-top" id="imgEdu">
 
                 <div class="card-body">
                     <h5 class="card-title">{{Educacion.lugarEdu}}</h5>
                     <p class="card-text">{{Educacion.descripcionEdu}}</p>
                     <p class="card-text">{{Educacion.anioEdu}}</p>
 
-
+                    <button class="btn btn-dark"><i class="fa-solid fa-pencil" routerLink="/editEducacion"
+                            *ngIf="isLogged"></i></button>
+                    <button class="btn btn-dark"><i class="fa-regular fa-trash-can"
+                            (click)="deleteEducacion(Educacion.id)"></i></button>
                 </div>
+
             </div>
+
+            <a href="#" class="btn btn-secondary" routerLink="/newEducacion" *ngIf="isLogged">Nueva
+                Educacion</a>
         </div>
     </div>
 </div>
+
 <app-footer></app-footer>

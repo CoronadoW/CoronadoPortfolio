@@ -32,7 +32,5 @@ export class EducacionServiceService {
   public editarEducacion(id: number, educacion: Educacion): Observable<any> {
     return this.httpClient.put<any>(this.eduUrl + `editarEducacion/${id}`, educacion);
   }
+
 }
-
-
-
