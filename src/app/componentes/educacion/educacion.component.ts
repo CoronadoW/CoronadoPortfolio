@@ -15,7 +15,6 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 export class EducacionComponent implements OnInit {
   educacion: Educacion[] = [];
 
-
   constructor(private educacionService: EducacionServiceService, private auth: Auth, private router: Router) { }
 
   isLogged = false;
@@ -55,8 +54,8 @@ export class EducacionComponent implements OnInit {
 //constructor(private datosPortfolio: PortfolioService) { }
 
 //ngOnInit(): void {
-  //this.datosPortfolio.obtenerDatos().subscribe(data => {
-    //console.log(data);
-    //this.educacionList = data.educacion;
-  //});
+//this.datosPortfolio.obtenerDatos().subscribe(data => {
+//console.log(data);
+//this.educacionList = data.educacion;
+//});
 //}

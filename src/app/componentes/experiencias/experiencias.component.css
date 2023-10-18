@@ -2,7 +2,7 @@ div {
     padding: 2%;
 }
 
-#imgExper {
+#imgExp {
     width: 150px;
 }
 
@@ -14,9 +14,3 @@ h3 {
     column-span: all;
     margin-left: 10%;
 }
-
-/*
-.container {
-    column-count: 2;
-}
-*/

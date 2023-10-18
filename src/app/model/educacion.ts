@@ -1,11 +1,11 @@
 export class Educacion {
     id?: number;
-    lugarEdu: String;
-    descripcionEdu: String;
-    anioEdu: String;
-    imgEdu: String;
+    lugarEdu: string;
+    descripcionEdu: string;
+    anioEdu: string;
+    imgEdu: string;
 
-    constructor(lugarEdu: String, descripcionEdu: String, anioEdu: String, imgEdu: String) {
+    constructor(lugarEdu: string, descripcionEdu: string, anioEdu: string, imgEdu: string) {
         this.lugarEdu = lugarEdu;
         this.descripcionEdu = descripcionEdu;
         this.anioEdu = anioEdu;

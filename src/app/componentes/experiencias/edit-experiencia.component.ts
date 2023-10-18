@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Experiencia } from 'src/app/model/experiencia';
 import { ExperienciaServiceService } from 'src/app/servicios/experiencia-service.service';
 
+
 @Component({
   selector: 'app-edit-experiencia',
   templateUrl: './edit-experiencia.component.html',
@@ -10,7 +11,6 @@ import { ExperienciaServiceService } from 'src/app/servicios/experiencia-service
 })
 export class EditExperienciaComponent implements OnInit {
   expLab: Experiencia = {
-
     lugarExp: '',
     descripcionExp: '',
     anioExp: '',
@@ -44,3 +44,4 @@ export class EditExperienciaComponent implements OnInit {
   }
 
 }
+

@@ -1,0 +1,12 @@
+<form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+    <div class="form-group">
+        <label for="titulo">Skill</label>
+        <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="titulo" required>
+    </div>
+    <div class="form-group">
+        <label for="porcentaje">Progreso</label>
+        <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
+    </div>
+
+    <button class="btn btn-primary">Añadir Skill</button>
+</form>

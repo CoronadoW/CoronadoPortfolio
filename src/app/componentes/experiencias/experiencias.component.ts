@@ -22,7 +22,6 @@ export class ExperienciasComponent implements OnInit {
   isLogged = false;
 
   ngOnInit(): void {
-
     this.cargarExperiencia();
     if (this.Auth.currentUser) {
       this.isLogged = true;

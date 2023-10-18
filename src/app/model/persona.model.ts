@@ -1,10 +1,10 @@
 export class persona {
     id?: number;
-    nombre: String;
-    titulo: String;
-    img: String;
+    nombre: string;
+    titulo: string;
+    img: string;
 
-    constructor(nombre: String, titulo: String, img: String) {
+    constructor(nombre: string, titulo: string, img: string) {
         this.nombre = nombre;
         this.titulo = titulo;
         this.img = img;

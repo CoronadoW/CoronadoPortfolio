@@ -14,20 +14,20 @@ export class NewExperienciaComponent implements OnInit {
   anioExp: string = '';
   imgExp: string = '';
 
-  constructor(private experieciaService: ExperienciaServiceService, private router: Router) { }
+  constructor(private experienciaService: ExperienciaServiceService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   onCreate(): void {
     const experiencia = new Experiencia(this.lugarExp, this.descripcionExp, this.anioExp, this.imgExp);
-    this.experieciaService.create(experiencia).subscribe(
+    this.experienciaService.create(experiencia).subscribe(
       data => {
         alert("Nueva experiencia añadida");
-        this.router.navigate(['Experiencia']);
+        this.router.navigate(['/Experiencia']);
       }, err => {
         alert("Algo debe haber salido mal");
-        this.router.navigate(['Experiencia']);
+        this.router.navigate(['/Experiencia']);
       }
     )
   }
