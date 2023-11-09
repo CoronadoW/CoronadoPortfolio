@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <h1>Soft Skills</h1>
+
+    <div class=" row">
+        <div class="text-center col-xs-4 col-lg-4" *ngFor="let SoftSkill of softSkill">
+            <circle-progress [percent]="(SoftSkill.softPorcentaje)" [radius]="100" [title]="(SoftSkill.softSkill)"
+                [showUnits]="false" [outerStrokeColor]="'#DD4B25'" [innerStrokeColor]="'#EB821C'" [animation]="true"
+                [animationDuration]="600">
+            </circle-progress>
+            <button class="btn btn-dark"><i class="fa-solid fa-pencil" routerLink="/editSkill"
+                    *ngIf="isLogged"></i></button>
+            <button class="btn btn-dark"><i class="fa-regular fa-trash-can"
+                    (click)="deleteSoftSkill(SoftSkill.id)"></i></button>
+        </div>
+    </div>
+
+    <a href="#" class="btn btn-secondary" routerLink="/newSoftSkill" *ngIf="isLogged">Nueva
+        Soft Skill</a>
+</div>
+<app-footer></app-footer>

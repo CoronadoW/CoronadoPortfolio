@@ -13,6 +13,7 @@ import { NewEducacionComponent } from './componentes/educacion/new-educacion.com
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { NewSkillComponent } from './componentes/skills/new-skill.component';
 import { EditSkillComponent } from './componentes/skills/edit-skill.component';
+import { SoftSkillComponent } from './componentes/soft-skill/soft-skill.component';
 /*para bloquear ciertas rutas si estamos logueados con firebase o no importamos canActivate, y de esta manera si no estamos registrados nos mandara al componente que se le indique
 para poder ir de un componente a otro y navegar en la misma pagina importamos el Router.
 En teoria para luego de loggearse redirigir al componente "portfolio"...canActivate(() => redirectLoggedInTo(['/portfolio'])) */
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'editEducacion', component: EditEducacionComponent },
   { path: 'newSkill', component: NewSkillComponent },
   { path: 'editSkill', component: EditSkillComponent },
+  { path: 'softSkill', component: SoftSkillComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

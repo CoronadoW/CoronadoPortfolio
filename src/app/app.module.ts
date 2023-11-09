@@ -34,6 +34,7 @@ import { EditEducacionComponent } from './componentes/educacion/edit-educacion.c
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 import { NewSkillComponent } from './componentes/skills/new-skill.component';
 import { EditSkillComponent } from './componentes/skills/edit-skill.component';
+import { SoftSkillComponent } from './componentes/soft-skill/soft-skill.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { EditSkillComponent } from './componentes/skills/edit-skill.component';
     EditEducacionComponent,
     NewSkillComponent,
     EditSkillComponent,
+    SoftSkillComponent,
   ],
 
   imports: [
