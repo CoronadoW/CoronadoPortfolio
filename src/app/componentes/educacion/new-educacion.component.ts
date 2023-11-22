@@ -25,10 +25,10 @@ export class NewEducacionComponent implements OnInit {
     this.educacionService.crearEducacion(educacion).subscribe(
       data => {
         alert("Nueva Educacion añadida");
-        this.router.navigate(['']);
+        this.router.navigate(['educacion']);
       }, err => {
         alert("Algo salió mal");
-        this.router.navigate(['']);
+        this.router.navigate(['educacion']);
       }
     )
   }

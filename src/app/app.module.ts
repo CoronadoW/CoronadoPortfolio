@@ -14,10 +14,7 @@ import { RedesComponent } from './componentes/redes/redes.component';
 import { BannerComponent } from './componentes/banner/banner.component';
 import { AboutComponent } from './componentes/about/about.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
-import { ExperienciasComponent } from './componentes/experiencias/experiencias.component';
-import { SkillsComponent } from './componentes/skills/skills.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { PortfolioService } from './servicios/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -28,13 +25,22 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { ExperienciasComponent } from './componentes/experiencias/experiencias.component';
 import { NewExperienciaComponent } from './componentes/experiencias/new-experiencia.component';
 import { EditExperienciaComponent } from './componentes/experiencias/edit-experiencia.component';
+
+import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
+
+import { SkillsComponent } from './componentes/skills/skills.component';
 import { NewSkillComponent } from './componentes/skills/new-skill.component';
 import { EditSkillComponent } from './componentes/skills/edit-skill.component';
+
 import { SoftSkillComponent } from './componentes/soft-skill/soft-skill.component';
+import { NewSoftSkillComponent } from './componentes/soft-skill/new-soft-skill.component';
+import { EditSoftSkillComponent } from './componentes/soft-skill/edit-soft-skill.component';
 
 
 @NgModule({
@@ -60,6 +66,8 @@ import { SoftSkillComponent } from './componentes/soft-skill/soft-skill.componen
     NewSkillComponent,
     EditSkillComponent,
     SoftSkillComponent,
+    NewSoftSkillComponent,
+    EditSoftSkillComponent,
   ],
 
   imports: [

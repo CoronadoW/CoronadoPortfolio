@@ -24,10 +24,10 @@ export class NewExperienciaComponent implements OnInit {
     this.experienciaService.create(experiencia).subscribe(
       data => {
         alert("Nueva experiencia añadida");
-        this.router.navigate(['/Experiencia']);
+        this.router.navigate(['experiencias']);
       }, err => {
         alert("Algo debe haber salido mal");
-        this.router.navigate(['/Experiencia']);
+        this.router.navigate(['experiencias']);
       }
     )
   }

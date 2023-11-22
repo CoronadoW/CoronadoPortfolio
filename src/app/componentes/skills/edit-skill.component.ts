@@ -23,7 +23,7 @@ export class EditSkillComponent implements OnInit {
         this.skill = data;
       }, err => {
         alert("No se edito el Skill");
-        this.router.navigate(['Skill']);
+        this.router.navigate(['skills']);
       }
     )
   }
@@ -32,12 +32,11 @@ export class EditSkillComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.skillService.editarSkill(id, this.skill).subscribe(
       data => {
-        this.router.navigate(['Skill']);
+        this.router.navigate(['skills']);
       }, err => {
         alert("No se pudo editar Skill");
-        this.router.navigate(['Skill']);
+        this.router.navigate(['skills']);
       }
     )
   }
-
 }

@@ -1,0 +1,13 @@
+<form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+    <div class="form-group">
+        <label for="softSkill">Soft Skill</label>
+        <input type="text" class="form-control" id="softSkill" name="softSkill" [(ngModel)]="softSkill" required>
+    </div>
+    <div class="form-group">
+        <label for="softPorcentaje">Progreso</label>
+        <input type="text" class="form-control" id="softPorcentaje" name="softPorcentaje" [(ngModel)]="softPorcentaje"
+            required>
+    </div>
+
+    <button class="btn btn-primary">Añadir Soft Skill</button>
+</form>
