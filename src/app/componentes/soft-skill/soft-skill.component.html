@@ -9,6 +9,8 @@
                 [animationDuration]="600">
             </circle-progress>
 
+            <!--<button *ngIf="isLogged" class="btn btn-light" [routerLink]="'/editSoftSkill/'+ SoftSkill.id">
+                <i class="bi bi-pencil-fill">EDITAR</i> </button>-->
             <button class="btn btn-dark"><i class="fa-solid fa-pencil" routerLink="/editSoftSkill/{{SoftSkill.id}}"
                     *ngIf="isLogged"></i></button>
 

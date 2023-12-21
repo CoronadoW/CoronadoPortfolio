@@ -31,7 +31,7 @@ const routes: Routes = [
   { path: 'newEducacion', component: NewEducacionComponent },
   { path: 'editEducacion', component: EditEducacionComponent },
   { path: 'newSkill', component: NewSkillComponent },
-  { path: 'editSkill', component: EditSkillComponent },
+  { path: 'editSkill/:id', component: EditSkillComponent },
   { path: 'softSkill', component: SoftSkillComponent },
   { path: 'newSoftSkill', component: NewSoftSkillComponent },
   { path: 'editSoftSkill', component: EditSoftSkillComponent },
