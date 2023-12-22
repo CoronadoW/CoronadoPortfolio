@@ -1,7 +1,7 @@
 <div class="container" *ngIf="skill">
     <div class="row">
         <div>
-            <form (ngSubmit)="editSkill(0)" novalidate #f="ngForm">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
 
                 <div class="form-group">
                     <label for="skill">Skill</label>
