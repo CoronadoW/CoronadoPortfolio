@@ -12,6 +12,8 @@ export class NewSkillComponent implements OnInit {
 
   titulo: string = '';
   porcentaje: number = 0;
+  innerColor: string = '';
+  outerColor: string = '';
 
   constructor(private skillService: SkillServiceService, private router: Router) { }
 
@@ -19,7 +21,7 @@ export class NewSkillComponent implements OnInit {
   }
 
   onCreate(): void {
-    const skill = new Skill(this.titulo, this.porcentaje);
+    const skill = new Skill(this.titulo, this.porcentaje, this.innerColor, this.outerColor);
     this.skillService.crearSkill(skill).subscribe(
       data => {
         alert("Nuevo Skill creado");

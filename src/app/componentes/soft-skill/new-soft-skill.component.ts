@@ -12,6 +12,8 @@ export class NewSoftSkillComponent implements OnInit {
 
   softSkill: string = '';
   softPorcentaje: number = 0;
+  softInnerColor: string = '';
+  softOuterColor: string = '';
 
   constructor(private softSkillService: SoftSkillService, private router: Router) { }
 
@@ -19,7 +21,7 @@ export class NewSoftSkillComponent implements OnInit {
   }
 
   onCreate(): void {
-    const softSkill = new SoftSkill(this.softSkill, this.softPorcentaje);
+    const softSkill = new SoftSkill(this.softSkill, this.softPorcentaje, this.softInnerColor, this.softOuterColor);
     this.softSkillService.salvarSoftSkill(softSkill).subscribe(
       data => {
         alert("Nuevo Soft Skill creado");

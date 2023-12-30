@@ -25,8 +25,8 @@ export class EditExperienciaComponent implements OnInit {
       data => {
         this.expLab = data;
       }, err => {
-        alert("No se editó experiencia");
-        this.router.navigate(['Experiencia']);
+        alert("No se encontró experiencia");
+        this.router.navigate(['experiencias']);
       }
     )
   }
@@ -35,10 +35,11 @@ export class EditExperienciaComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.experienciaService.update(id, this.expLab).subscribe(
       data => {
-        this.router.navigate(['Experiencia']);
+        alert("Experiencia con id " + (id) + " fue editada")
+        this.router.navigate(['experiencias']);
       }, err => {
         alert("No se pudo editar experiencia");
-        this.router.navigate(['Experiencia']);
+        this.router.navigate(['experiencias']);
       }
     )
   }

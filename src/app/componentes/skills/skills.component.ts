@@ -13,7 +13,11 @@ import { SkillServiceService } from 'src/app/servicios/skill-service.service';
 export class SkillsComponent implements OnInit {
   skill: Skill[] = [];
 
-  constructor(private skillService: SkillServiceService, private auth: Auth, private router: Router) { }
+  constructor(
+    private skillService: SkillServiceService,
+    private auth: Auth,
+    private router: Router
+  ) { }
 
   isLogged = false;
 

@@ -17,7 +17,7 @@ export class SoftSkillService {
   }
 
   public encuentraSoftSkillId(id: number): Observable<SoftSkill> {
-    return this.httpClient.get<SoftSkill>(this.softSkillUrl + `encuentraSkillId/${id}`);
+    return this.httpClient.get<SoftSkill>(this.softSkillUrl + `encuentraSoftSkillId/${id}`);
   }
 
   public borrarSoftSkill(id: number): Observable<any> {

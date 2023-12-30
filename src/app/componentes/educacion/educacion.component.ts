@@ -36,6 +36,7 @@ export class EducacionComponent implements OnInit {
     if (id != undefined) {
       this.educacionService.borrarId(id).subscribe(
         data => {
+          alert("Educacion con id " + (id) + " fue borrada")
           this.showEducacion();
         }, err => {
           alert("No se borró la experiencia");

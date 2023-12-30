@@ -42,16 +42,6 @@ import { SoftSkillComponent } from './componentes/soft-skill/soft-skill.componen
 import { NewSoftSkillComponent } from './componentes/soft-skill/new-soft-skill.component';
 import { EditSoftSkillComponent } from './componentes/soft-skill/edit-soft-skill.component';
 
-import { AptitudComponent } from './componentes/aptitud/aptitud.component';
-import { NewAptitudComponent } from './componentes/aptitud/new-aptitud.component';
-import { EditAptitudComponent } from './componentes/aptitud/edit-aptitud.component';
-
-
-
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,9 +67,6 @@ import { EditAptitudComponent } from './componentes/aptitud/edit-aptitud.compone
     SoftSkillComponent,
     NewSoftSkillComponent,
     EditSoftSkillComponent,
-    AptitudComponent,
-    NewAptitudComponent,
-    EditAptitudComponent,
   ],
 
   imports: [

@@ -10,36 +10,43 @@ import { EducacionServiceService } from 'src/app/servicios/educacion-service.ser
 })
 export class EditEducacionComponent implements OnInit {
   educa: Educacion = {
+    id: undefined,
     lugarEdu: '',
     descripcionEdu: '',
     anioEdu: '',
-    imgEdu: ''
-  }
+    imgEdu: '',
+  };
 
-  constructor(private educacionService: EducacionServiceService, private activatedRouter: ActivatedRoute, private router: Router) { }
+  constructor(
+    private educacionService: EducacionServiceService,
+    private activatedRouter: ActivatedRoute,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.educacionService.traeId(id).subscribe(
-      data => {
+      (data) => {
         this.educa = data;
-      }, err => {
-        alert("No se editó educación");
-        this.router.navigate(['Educacion']);
+      },
+      (err) => {
+        alert('No se encontró educación');
+        this.router.navigate(['educacion']);
       }
-    )
+    );
   }
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.educacionService.editarEducacion(id, this.educa).subscribe(
-      data => {
-        this.router.navigate(['Educacion']);
-      }, err => {
-        alert("No se pudo editar educación");
-        this.router.navigate(['Educacion']);
+    this.educacionService.editarId(id, this.educa).subscribe(
+      (data) => {
+        alert('La educación ' + (id) + ' fue editada')
+        this.router.navigate(['educacion']);
+      },
+      (err) => {
+        alert('No se pudo editar educación');
+        this.router.navigate(['educacion']);
       }
-    )
+    );
   }
-
 }

@@ -13,6 +13,8 @@ export class EditSkillComponent implements OnInit {
     id: undefined,
     titulo: '',
     porcentaje: 0,
+    innerColor: '',
+    outerColor: '',
 
   };
 
@@ -39,6 +41,7 @@ export class EditSkillComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.skillService.editarSkill(id, this.skill).subscribe(
       (data) => {
+        alert('El skill fue editado')
         this.router.navigate(['skills']);
       },
       (err) => {

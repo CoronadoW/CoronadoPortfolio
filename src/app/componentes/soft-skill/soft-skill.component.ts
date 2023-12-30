@@ -12,7 +12,11 @@ import { SoftSkillService } from 'src/app/servicios/soft-skill.service';
 export class SoftSkillComponent implements OnInit {
   softSkill: SoftSkill[] = [];
 
-  constructor(private softSkillService: SoftSkillService, private auth: Auth, private router: Router) { }
+  constructor(
+    private softSkillService: SoftSkillService,
+    private auth: Auth,
+    private router: Router
+  ) { }
 
   isLogged = false;
 

@@ -27,14 +27,14 @@ const routes: Routes = [
   { path: 'skills', component: SkillsComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'newExperiencia', component: NewExperienciaComponent },
-  { path: 'editExperiencia', component: EditExperienciaComponent },
+  { path: 'editExperiencia/:id', component: EditExperienciaComponent },
   { path: 'newEducacion', component: NewEducacionComponent },
-  { path: 'editEducacion', component: EditEducacionComponent },
+  { path: 'editEducacion/:id', component: EditEducacionComponent },
   { path: 'newSkill', component: NewSkillComponent },
   { path: 'editSkill/:id', component: EditSkillComponent },
   { path: 'softSkill', component: SoftSkillComponent },
   { path: 'newSoftSkill', component: NewSoftSkillComponent },
-  { path: 'editSoftSkill', component: EditSoftSkillComponent },
+  { path: 'editSoftSkill/:id', component: EditSoftSkillComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

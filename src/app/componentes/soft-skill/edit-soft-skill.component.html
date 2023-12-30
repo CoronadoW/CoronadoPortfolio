@@ -1,20 +1,31 @@
-<div class="container" *ngIf="softS">
+<div class="container" *ngIf="softSkill">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
                 <div class="form-group">
                     <label for="softSkill">Soft Skill</label>
                     <input type="text" class="form-control" id="softSkill" name="softSkill"
-                        [(ngModel)]="softS.softSkill" required>
+                        [(ngModel)]="softSkill.softSkill" required>
                 </div>
                 <div class="form-group">
                     <label for="softPorcentaje">Porcentaje</label>
                     <input type="text" class="form-control" id="softPorcentaje" name="softPorcentaje"
-                        [(ngModel)]="softS.softPorcentaje" required>
+                        [(ngModel)]="softSkill.softPorcentaje" required>
+                </div>
+                <div class="form-group">
+                    <label for="softInnerColor">SoftInnerColor</label>
+                    <input type="text" class="form-control" id="softInnerColor" name="softInnerColor"
+                        [(ngModel)]="softSkill.softInnerColor" required>
+                </div>
+                <div class="form-group">
+                    <label for="softOuterColor">Porcentaje</label>
+                    <input type="text" class="form-control" id="softOuterColor" name="softOuterColor"
+                        [(ngModel)]="softSkill.softOuterColor" required>
                 </div>
 
                 <button class="btn btn-primary">
-                    Editar Soft Skill
+                    Actualizar Soft Skill
                 </button>
             </form>
         </div>

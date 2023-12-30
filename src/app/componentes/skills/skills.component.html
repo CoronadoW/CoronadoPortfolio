@@ -3,24 +3,30 @@
 <app-navbar></app-navbar>
 <div class="container">
     <h1>Hard Skills</h1>
+    <a href="#" class="btn btn-secondary" routerLink="/newSkill" *ngIf="isLogged">Nueva
+        Skill</a>
 
     <div class=" row">
         <div class="text-center col-xs-4 col-lg-4" *ngFor="let Skill of skill">
             <circle-progress [percent]="(Skill.porcentaje)" [radius]="100" [title]="(Skill.titulo)" [showUnits]="false"
-                [outerStrokeColor]="'#DD4B25'" [innerStrokeColor]="'#EB821C'" [animation]="true"
+                [outerStrokeColor]="(Skill.outerColor)" [innerStrokeColor]="(Skill.innerColor)" [animation]="true"
                 [animationDuration]="600">
             </circle-progress>
+
+            <!--<circle-progress [percent]="(Skill.porcentaje)" [radius]="100" [title]="(Skill.titulo)" [showUnits]="false"
+                [outerStrokeColor]="'#E0E009'" [innerStrokeColor]="'#fff200'" [animation]="true" [animationDuration]="600">
+            </circle-progress>-->
+
+            <!--<a href="#" class="btn btn-secondary" routerLink="/editSkill/{{Skill.id}}" *ngIf="isLogged">Edit
+                            Skill</a>-->
             <button class="btn btn-dark"><i class="fa-solid fa-pencil" routerLink="/editSkill/{{Skill.id}}"
                     *ngIf="isLogged"></i></button>
-            <!--<a href="#" class="btn btn-secondary" routerLink="/editSkill/{{Skill.id}}" *ngIf="isLogged">Edit
-                Skill</a>-->
             <button class="btn btn-dark"><i class="fa-regular fa-trash-can"
                     (click)="deleteSkill(Skill.id)"></i></button>
         </div>
     </div>
 
-    <a href="#" class="btn btn-secondary" routerLink="/newSkill" *ngIf="isLogged">Nueva
-        Skill</a>
+
 
 </div>
 <!--  <div class="text-center col-xs-4 col-lg-4">
