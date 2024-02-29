@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
 })
 export class EducacionServiceService {
 
-  eduUrl = 'http://localhost:8080/educacion/'
+  eduUrl = 'https://coronadobackservice.onrender.com/educacion/'
 
   constructor(private httpClient: HttpClient) { }
 

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class SoftSkillService {
 
-  softSkillUrl = 'http://localhost:8080/softSkill/'
+  softSkillUrl = 'https://coronadobackservice.onrender.com/softSkill/'
 
   constructor(private httpClient: HttpClient) { }
 
