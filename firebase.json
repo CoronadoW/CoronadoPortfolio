@@ -1,1 +1,10 @@
-{}
+{
+  "hosting": {
+    "public": "dist/coronado-portfolio",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
