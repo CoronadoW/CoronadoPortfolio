@@ -1,6 +1,7 @@
 # CoronadoPortfolio
 
 THANK'S FOR REDIRECT YOUR TIME TO MY REPOSITORY
+Please register with your email and then try signing in to my portfolio website.
 This project was developed and deployed with the following tools: Angular, Html, Css, Bootstrap, Icons, Firebase.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
